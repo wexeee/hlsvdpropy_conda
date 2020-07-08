@@ -1,0 +1,31 @@
+package:
+  name: hlsvdpropy
+  version: 2.0.1
+
+source:
+  git_url: https://github.com/bsoher/hlsvdpropy
+  git_rev: 4428fc67d25a952ed6dcece15f49e7dc988699d8
+  
+build:
+  noarch: python
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - numpy
+    - scipy
+
+test:
+  imports:
+    - hlsvdpropy
+
+about:
+  home: https://github.com/bsoher/hlsvdpropy
+  license: BSD
+  license_file: LICENSE
+  summary: Pure Python implementation of the algorithm provided by the Fortran based HLSVDPRO package.
